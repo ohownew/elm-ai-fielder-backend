@@ -12,11 +12,11 @@ def parseCompFromFileName(file_name):
 
 def searchCompany(company_name):
     """根据企业名查询企业信息"""
-    host='172.16.124.10'  # 数据库地址
+    host=''  # 数据库地址
     port=3311  # 端口号
-    user='readonly'  # 用户名
-    passwd='XEvwijUpHtaxO9h6'  # 密码
-    db='db2'
+    user=''  # 用户名
+    passwd=''  # 密码
+    db='' # 数据库名
     engine = create_engine(f'mysql+pymysql://{user}:{passwd}@{host}:{port}/{db}')
 
     with engine.connect() as conn:
